@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'altona-sans';
+  src: url('/fonts/altona-sans-regular.woff') format('woff'),
+    url('/fonts/altona-sans-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

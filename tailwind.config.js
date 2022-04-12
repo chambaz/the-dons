@@ -11,6 +11,9 @@ module.exports = {
         'dons-cyan': '#8fe6f1',
         'dons-red': '#e27458',
       },
+      fontFamily: {
+        'dons-altona': 'altona-sans',
+      },
     },
   },
   plugins: [],

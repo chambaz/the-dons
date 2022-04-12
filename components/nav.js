@@ -1,6 +1,6 @@
 const Nav = () => {
   return (
-    <nav className="flex items-center py-4 pr-6 mx-auto 2xl:pr-0 2xl:container">
+    <nav className="flex items-center py-4 pr-6 mx-auto text-xl 2xl:pr-0 2xl:container">
       <a href="/">
         <img
           src="/img/dons-logo.svg"
@@ -14,16 +14,16 @@ const Nav = () => {
         <li>
           <a href="#">Roadmap</a>
         </li>
-        <li className="ml-8">
+        <li className="ml-10">
           <a href="#">Rarity</a>
         </li>
-        <li className="ml-8">
+        <li className="ml-10">
           <a href="#">Staking</a>
         </li>
-        <li className="ml-8">
+        <li className="ml-10">
           <a href="#">Raffles</a>
         </li>
-        <li className="ml-8">
+        <li className="ml-10">
           <a href="#">FAQ</a>
         </li>
         <li className="ml-20">
@@ -34,6 +34,7 @@ const Nav = () => {
             className="flex items-center transition cursor-pointer text-lotus-red hover:text-lotus-red-light">
             <svg
               class="hidden cursor-pointer md:block"
+              style={{ transform: 'translateY(-2px)' }}
               viewBox="0 0 80 19"
               width="65px"
               fill="none"
