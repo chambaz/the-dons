@@ -10,7 +10,7 @@ const Nav = (props) => {
 
   return (
     <>
-      <nav className="relative z-50 flex items-center px-4 py-4 mx-auto text-2xl 2xl:px-0 2xl:container">
+      <nav className="container relative z-50 flex items-center px-4 py-4 mx-auto text-2xl">
         <Link href="/" passHref>
           <a>
             <img
