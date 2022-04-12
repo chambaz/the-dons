@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Nav from '../components/nav'
 
 export default function Home() {
   return (
@@ -10,34 +11,7 @@ export default function Home() {
       </Head>
 
       <div className="w-screen h-screen bg-center bg-cover bg-dons-white">
-        <nav className="flex items-center py-4 pr-6 mx-auto 2xl:pr-0 2xl:container">
-          <a href="/">
-            <img
-              src="/img/dons-logo.svg"
-              alt="The Dons"
-              width="120px"
-              height="120px"
-            />
-          </a>
-
-          <ul className="flex ml-auto">
-            <li>
-              <a href="#">Roadmap</a>
-            </li>
-            <li className="ml-8">
-              <a href="#">Rarity</a>
-            </li>
-            <li className="ml-8">
-              <a href="#">Staking</a>
-            </li>
-            <li className="ml-8">
-              <a href="#">Raffles</a>
-            </li>
-            <li className="ml-8">
-              <a href="#">FAQ</a>
-            </li>
-          </ul>
-        </nav>
+        <Nav />
       </div>
     </>
   )
