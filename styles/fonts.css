@@ -5,3 +5,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'jungle-adventurer';
+  src: url('/fonts/jungle-adventurer.woff') format('woff'),
+    url('/fonts/jungle-adventurer.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

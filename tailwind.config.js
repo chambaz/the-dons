@@ -13,6 +13,7 @@ module.exports = {
       },
       fontFamily: {
         'dons-altona': 'altona-sans',
+        'dons-jungle': 'jungle-adventurer',
       },
     },
   },
