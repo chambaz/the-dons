@@ -11,7 +11,7 @@ const Roadmap = () => {
       </Head>
 
       <div className="w-screen h-full min-h-screen text-xl bg-center bg-cover bg-dons-white font-dons-altona">
-        <Nav />
+        <Nav active="roadmap" />
 
         <div className="px-4 pt-24 pb-8 mx-auto 2xl:container 2xl:px-0">
           <div className="lg:w-2/5">

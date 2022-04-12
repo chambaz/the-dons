@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <nav className="flex items-center px-4 py-4 mx-auto text-2xl 2xl:px-0 2xl:container">
       <Link href="/" passHref>
@@ -17,7 +17,12 @@ const Nav = () => {
       <ul className="items-center hidden ml-auto lg:flex">
         <li>
           <Link href="/roadmap" passHref>
-            <a className="pb-1 transition border-b-2 border-transparent text-dons-black hover:border-dons-cyan">
+            <a
+              className={`pb-1 transition border-b-2 text-dons-black hover:border-dons-cyan ${
+                props.active === 'roadmap'
+                  ? 'border-dons-cyan'
+                  : 'border-transparent'
+              }`}>
               Roadmap
             </a>
           </Link>
