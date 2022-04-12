@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.cursor-emoji {
+  cursor: url(/img/raised-eyebrows-emoji.png) 20 20, pointer;
+  cursor: -webkit-image-set(
+        url(/img/raised-eyebrows-emoji.png) 1x,
+        url(/img/raised-eyebrows-emoji.png) 2x
+      )
+      15 15,
+    pointer;
+  padding-top: 1rem;
+}

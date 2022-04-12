@@ -68,23 +68,23 @@ const Nav = (props) => {
           </li>
           <li className="ml-10">
             <a
-              className="pb-1 transition border-b-2 border-transparent text-dons-black hover:border-dons-cyan"
+              className="pb-1 transition border-b-2 border-transparent text-dons-black cursor-emoji"
               href="#">
               Staking
             </a>
           </li>
           <li className="ml-10">
             <a
-              className="pb-1 transition border-b-2 border-transparent text-dons-black hover:border-dons-cyan"
+              className="pb-1 transition border-b-2 border-transparent text-dons-black cursor-emoji"
               href="#">
               Raffles
             </a>
           </li>
           <li className="ml-10">
             <a
-              className="pb-1 transition border-b-2 border-transparent text-dons-black hover:border-dons-cyan"
+              className="pb-1 transition border-b-2 border-transparent text-dons-black cursor-emoji"
               href="#">
-              FAQ
+              Shop
             </a>
           </li>
         </ul>
@@ -172,12 +172,11 @@ const Nav = (props) => {
               <Link href="/roadmap" passHref>
                 <a
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red ${
+                  className={`block transition border-b-2 border-transparent cursor-pointer ${
                     props.active === 'roadmap'
                       ? 'border-dons-cyan'
                       : 'border-transparent'
-                  }`}
-                  style={{ transform: 'translateY(4px)' }}>
+                  }`}>
                   Roadmap
                 </a>
               </Link>
@@ -187,33 +186,29 @@ const Nav = (props) => {
                 href="https://howrare.xyz/thedons"
                 target="_blank"
                 rel="noreferrer"
-                className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
-                style={{ transform: 'translateY(4px)' }}>
+                className="block transition border-b-2 border-transparent cursor-pointer">
                 Rarity
               </a>
             </li>
             <li className="my-4 text-2xl">
               <a
                 href="#"
-                className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
-                style={{ transform: 'translateY(4px)' }}>
-                Staking
+                className="block transition border-b-2 border-transparent cursor-help">
+                Staking <span className="text-sm">(coming soon)</span>
               </a>
             </li>
             <li className="my-4 text-2xl">
               <a
                 href="#"
-                className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
-                style={{ transform: 'translateY(4px)' }}>
-                Raffles
+                className="block transition border-b-2 border-transparent cursor-help">
+                Raffles <span className="text-sm">(coming soon)</span>
               </a>
             </li>
             <li className="my-4 text-2xl">
               <a
                 href="#"
-                className="block transition border-b-2 border-transparent cursor-pointer text-lotus-red hover:border-lotus-red"
-                style={{ transform: 'translateY(4px)' }}>
-                FAQ
+                className="block transition border-b-2 border-transparent cursor-help">
+                Shop <span className="text-sm">(coming soon)</span>
               </a>
             </li>
           </ul>
