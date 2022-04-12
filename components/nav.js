@@ -10,7 +10,7 @@ const Nav = (props) => {
 
   return (
     <>
-      <nav className="container relative z-50 flex items-center px-4 py-4 mx-auto text-2xl">
+      <nav className="container relative z-50 flex items-center px-4 py-4 mx-auto text-2xl md:px-0">
         <Link href="/" passHref>
           <a>
             <img
@@ -164,9 +164,9 @@ const Nav = (props) => {
 
       <div
         ref={mobileMenuRef}
-        className="fixed z-40 w-screen h-full top-32 bg-dons-white"
+        className="fixed top-0 z-40 w-screen h-full bg-dons-white"
         style={{ display: mobileMenuOpen ? 'block' : 'none' }}>
-        <nav className="flex flex-col items-center justify-center w-full h-full -translate-y-36">
+        <nav className="flex flex-col items-center justify-center w-full h-full">
           <ul className="flex flex-col items-center justify-center text-lg font-dons-altona text-lotus-red">
             <li className="my-4 text-2xl">
               <Link href="/roadmap" passHref>
