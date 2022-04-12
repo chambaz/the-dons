@@ -1,26 +1,30 @@
+import Link from 'next/link'
+
 const Nav = () => {
   return (
     <nav className="flex items-center px-4 py-4 mx-auto text-2xl 2xl:px-0 2xl:container">
-      <a href="/">
-        <img
-          src="/img/dons-logo.svg"
-          alt="The Dons"
-          width="80px"
-          height="80px"
-        />
-      </a>
+      <Link href="/" passHref>
+        <a>
+          <img
+            src="/img/dons-logo.svg"
+            alt="The Dons"
+            width="80px"
+            height="80px"
+          />
+        </a>
+      </Link>
 
       <ul className="items-center hidden ml-auto lg:flex">
         <li>
-          <a
-            className="transition text-dons-black hover:text-dons-cyan"
-            href="/roadmap">
-            Roadmap
-          </a>
+          <Link href="/roadmap" passHref>
+            <a className="pb-1 transition border-b-2 border-transparent text-dons-black hover:border-dons-cyan">
+              Roadmap
+            </a>
+          </Link>
         </li>
         <li className="ml-10">
           <a
-            className="transition text-dons-black hover:text-dons-cyan"
+            className="pb-1 transition border-b-2 border-transparent text-dons-black hover:border-dons-cyan"
             href="https://howrare.xyz/thedons"
             target="_blank"
             rel="noreferrer">
@@ -29,21 +33,21 @@ const Nav = () => {
         </li>
         <li className="ml-10">
           <a
-            className="transition text-dons-black hover:text-dons-cyan"
+            className="pb-1 transition border-b-2 border-transparent text-dons-black hover:border-dons-cyan"
             href="#">
             Staking
           </a>
         </li>
         <li className="ml-10">
           <a
-            className="transition text-dons-black hover:text-dons-cyan"
+            className="pb-1 transition border-b-2 border-transparent text-dons-black hover:border-dons-cyan"
             href="#">
             Raffles
           </a>
         </li>
         <li className="ml-10">
           <a
-            className="transition text-dons-black hover:text-dons-cyan"
+            className="pb-1 transition border-b-2 border-transparent text-dons-black hover:border-dons-cyan"
             href="#">
             FAQ
           </a>
