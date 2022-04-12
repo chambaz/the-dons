@@ -5,14 +5,14 @@ const Nav = () => {
         <img
           src="/img/dons-logo.svg"
           alt="The Dons"
-          width="120px"
-          height="120px"
+          width="80px"
+          height="80px"
         />
       </a>
 
       <ul className="flex items-center ml-auto">
         <li>
-          <a href="#">Roadmap</a>
+          <a href="/roadmap">Roadmap</a>
         </li>
         <li className="ml-10">
           <a href="#">Rarity</a>

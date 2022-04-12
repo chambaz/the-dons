@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Nav from '../components/nav'
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -16,3 +16,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home
