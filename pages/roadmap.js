@@ -17,10 +17,10 @@ const Roadmap = () => {
           <div className="lg:w-2/5">
             <h1 className="text-6xl font-dons-jungle">Roadmap</h1>
             <p className="mt-4 leading-relaxed">
-              Consectetur aliquip aliquip commodo culpa non proident magna
-              officia tempor in minim sint. Ex laborum do aliqua magna ad
-              officia proident culpa et. Aliquip nulla cupidatat anim sunt
-              mollit ea. Eu tempor mollit elit laboris enim ad.
+              Our roadmap shows what we are currently working on and ready to
+              share. We have a lot of exciting things in store that are not
+              ready for announcement just yet and we are always looking to add
+              new value.
             </p>
           </div>
 
