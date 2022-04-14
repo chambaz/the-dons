@@ -6,13 +6,22 @@ import Link from 'next/link'
 
 const Nav = (props) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [showNav, setShowNav] = useState(false)
   const mobileMenuRef = useRef()
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowNav(true)
+    }, 1000)
+  })
 
   return (
     <>
       <nav className="container relative z-50 flex items-center px-4 py-4 mx-auto text-2xl md:px-0">
         <Link href="/" passHref>
-          <a>
+          <a
+            className="transition duration-500"
+            style={{ opacity: showNav ? 1 : 0 }}>
             <img
               src="/img/dons-logo.svg"
               alt="The Dons"
@@ -44,7 +53,9 @@ const Nav = (props) => {
           />
         )}
 
-        <ul className="items-center hidden ml-auto lg:flex">
+        <ul
+          className="items-center hidden ml-auto transition duration-500 opacity-0 lg:flex"
+          style={{ opacity: showNav ? 1 : 0, 'transition-delay': '.5s' }}>
           <li>
             <Link href="/roadmap" passHref>
               <a
@@ -89,8 +100,12 @@ const Nav = (props) => {
           </li>
         </ul>
         <ul
-          className="items-center hidden ml-20 lg:flex"
-          style={{ transform: 'translateY(-2px)' }}>
+          className="items-center hidden ml-20 duration-500 lg:flex"
+          style={{
+            transform: 'translateY(-2px)',
+            opacity: showNav ? 1 : 0,
+            'transition-delay': '.5s',
+          }}>
           <li>
             <a
               href="https://paras.id/collection/nft.thedons.near"
