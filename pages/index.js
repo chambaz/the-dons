@@ -89,8 +89,8 @@ const Home = () => {
           ref={don}
           style={{
             opacity: showDon ? 1 : 0,
-            transform: `translate(${(mousePos.x / 20) * -1}px, ${
-              (mousePos.y / 20) * -1
+            transform: `translate(${(mousePos.x / 25) * -1}px, ${
+              (mousePos.y / 25) * -1
             }px)`,
           }}
           src="/img/don.png"
