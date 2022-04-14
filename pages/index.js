@@ -57,7 +57,7 @@ const Home = () => {
       </Head>
 
       <div
-        className="w-screen h-screen text-xl bg-center bg-cover bg-dons-white font-dons-altona"
+        className="w-screen h-screen text-xl bg-center bg-cover bg-dons-white font-dons-altona text-dons-black"
         style={{ backgroundImage: 'url(/img/bg.jpg)' }}>
         <Nav />
       </div>

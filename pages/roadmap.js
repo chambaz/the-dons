@@ -10,7 +10,7 @@ const Roadmap = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="w-screen h-full min-h-screen text-xl bg-center bg-cover bg-dons-white font-dons-altona">
+      <div className="w-screen h-full min-h-screen text-xl bg-center bg-cover bg-dons-white font-dons-altona text-dons-black">
         <Nav active="roadmap" />
 
         <div className="container px-4 pt-12 pb-8 mx-auto md:px-0">
