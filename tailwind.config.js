@@ -8,7 +8,7 @@ module.exports = {
       colors: {
         'dons-black': '#282e22',
         'dons-white': '#ebebeb',
-        'dons-cyan': '#8fe6f1',
+        'dons-blue': '#79B0C0',
         'dons-red': '#e27458',
       },
       fontFamily: {

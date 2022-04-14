@@ -48,9 +48,9 @@ const Nav = (props) => {
           <li>
             <Link href="/roadmap" passHref>
               <a
-                className={`pb-1 transition border-b-2 text-dons-black hover:border-dons-cyan ${
+                className={`pb-1 transition border-b-2 text-dons-black hover:border-dons-blue ${
                   props.active === 'roadmap'
-                    ? 'border-dons-cyan'
+                    ? 'border-dons-blue'
                     : 'border-transparent'
                 }`}>
                 Roadmap
@@ -59,7 +59,7 @@ const Nav = (props) => {
           </li>
           <li className="ml-10">
             <a
-              className="pb-1 transition border-b-2 border-transparent text-dons-black hover:border-dons-cyan"
+              className="pb-1 transition border-b-2 border-transparent text-dons-black hover:border-dons-blue"
               href="https://howrare.xyz/thedons"
               target="_blank"
               rel="noreferrer">
@@ -96,7 +96,7 @@ const Nav = (props) => {
               href="https://paras.id/collection/nft.thedons.near"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center transition cursor-pointer text-dons-black hover:text-dons-cyan">
+              className="flex items-center transition cursor-pointer text-dons-black hover:text-dons-blue">
               <svg
                 className="cursor-pointer"
                 viewBox="0 0 80 19"
@@ -128,7 +128,7 @@ const Nav = (props) => {
               href="https://twitter.com/TheDonsProject"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center transition cursor-pointer text-dons-black hover:text-dons-cyan">
+              className="flex items-center transition cursor-pointer text-dons-black hover:text-dons-blue">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 22.27 18.23"
@@ -146,7 +146,7 @@ const Nav = (props) => {
               href="https://discord.gg/CsPAhxm988"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center transition cursor-pointer text-dons-black hover:text-dons-cyan">
+              className="flex items-center transition cursor-pointer text-dons-black hover:text-dons-blue">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 23.28 17.74"
@@ -174,7 +174,7 @@ const Nav = (props) => {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`block transition border-b-2 border-transparent cursor-pointer ${
                     props.active === 'roadmap'
-                      ? 'border-dons-cyan'
+                      ? 'border-dons-blue'
                       : 'border-transparent'
                   }`}>
                   Roadmap
