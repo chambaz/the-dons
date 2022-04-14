@@ -59,7 +59,7 @@ const Nav = (props) => {
           <li>
             <Link href="/roadmap" passHref>
               <a
-                className={`pb-1 transition border-b-2 text-dons-black hover:border-dons-blue ${
+                className={`pb-1 transition border-b-2 text-dons-black hover:border-dons-red ${
                   props.active === 'roadmap'
                     ? 'border-dons-blue'
                     : 'border-transparent'
@@ -70,7 +70,7 @@ const Nav = (props) => {
           </li>
           <li className="ml-10">
             <a
-              className="pb-1 transition border-b-2 border-transparent text-dons-black hover:border-dons-blue"
+              className="pb-1 transition border-b-2 border-transparent text-dons-black hover:border-dons-red"
               href="https://howrare.xyz/thedons"
               target="_blank"
               rel="noreferrer">
@@ -111,7 +111,7 @@ const Nav = (props) => {
               href="https://paras.id/collection/nft.thedons.near"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center transition cursor-pointer text-dons-black hover:text-dons-blue">
+              className="flex items-center transition cursor-pointer text-dons-black hover:text-dons-red">
               <svg
                 className="cursor-pointer"
                 viewBox="0 0 80 19"
@@ -143,7 +143,7 @@ const Nav = (props) => {
               href="https://twitter.com/TheDonsProject"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center transition cursor-pointer text-dons-black hover:text-dons-blue">
+              className="flex items-center transition cursor-pointer text-dons-black hover:text-dons-red">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 22.27 18.23"
@@ -161,7 +161,7 @@ const Nav = (props) => {
               href="https://discord.gg/CsPAhxm988"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center transition cursor-pointer text-dons-black hover:text-dons-blue">
+              className="flex items-center transition cursor-pointer text-dons-black hover:text-dons-red">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 23.28 17.74"
