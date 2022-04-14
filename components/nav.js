@@ -24,8 +24,8 @@ const Nav = (props) => {
             <img
               src="/img/dons-logo.svg"
               alt="The Dons"
-              width="80px"
-              height="80px"
+              width="60px"
+              height="60px"
             />
           </a>
         </Link>
