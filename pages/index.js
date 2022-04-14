@@ -1,7 +1,31 @@
+import { useState, useEffect, useRef } from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
 
 const Home = () => {
+  const [showDon, setShowDon] = useState(false)
+  const don = useRef()
+  const [mousePos, setMousePos] = useState({})
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowDon(true)
+    }, 500)
+  }, [])
+
+  const onMove = (e) => {
+    setMousePos({
+      x: e.pageX - window.innerWidth / 2,
+      y: e.pageY - window.innerHeight / 2,
+    })
+
+    console.log(mousePos)
+  }
+
+  const scale = (number, inMin, inMax, outMin, outMax) => {
+    return ((number - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin
+  }
+
   return (
     <>
       <Head>
@@ -57,9 +81,20 @@ const Home = () => {
       </Head>
 
       <div
-        className="w-screen h-screen text-xl bg-center bg-cover bg-dons-white font-dons-altona text-dons-black"
-        style={{ backgroundImage: 'url(/img/bg.jpg)' }}>
+        onMouseMove={onMove}
+        className="w-screen h-screen text-xl bg-center bg-cover bg-dons-white font-dons-altona text-dons-black main-bg">
         <Nav />
+        <img
+          className="fixed hidden object-contain w-screen h-screen opacity-0 lg:block"
+          ref={don}
+          style={{
+            opacity: showDon ? 1 : 0,
+            transform: `translate(${(mousePos.x / 20) * -1}px, ${
+              (mousePos.y / 20) * -1
+            }px)`,
+          }}
+          src="/img/don.png"
+        />
       </div>
     </>
   )

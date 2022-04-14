@@ -12,3 +12,13 @@
     pointer;
   padding-top: 1rem;
 }
+
+.main-bg {
+  background-image: url(/img/bg-full.jpg);
+}
+
+@media (min-width: 1024px) {
+  .main-bg {
+    background-image: url(/img/bg.jpg);
+  }
+}
