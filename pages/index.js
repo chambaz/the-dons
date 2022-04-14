@@ -40,10 +40,10 @@ const Home = () => {
           content="Building the foundations for the NEAR NFT ecosystem."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.lotusgang.com/" />
+        <meta property="og:url" content="https://www.thedonsproject.xyz/" />
         <meta
           property="og:image"
-          content="https://the-dons.vercel.app/img/bg.jpg"
+          content="https://the-dons.vercel.app/img/bg-full.jpg"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@nytimes" />
@@ -55,7 +55,7 @@ const Home = () => {
         />
         <meta
           name="twitter:image"
-          content="https://the-dons.vercel.app/img/bg.jpg"
+          content="https://the-dons.vercel.app/img/bg-full.jpg"
         />
         <link
           rel="apple-touch-icon"
