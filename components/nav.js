@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { HiMenuAlt1 } from 'react-icons/hi'
 import { IoClose } from 'react-icons/io5'
-import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import Link from 'next/link'
 
 const Nav = (props) => {
@@ -34,7 +33,6 @@ const Nav = (props) => {
         {mobileMenuOpen && (
           <IoClose
             onClick={() => {
-              enableBodyScroll(mobileMenuRef.current)
               setMobileMenuOpen(false)
             }}
             className="ml-auto text-4xl cursor-pointer lg:hidden text-dons-black"
@@ -45,7 +43,6 @@ const Nav = (props) => {
         {!mobileMenuOpen && (
           <HiMenuAlt1
             onClick={() => {
-              disableBodyScroll(mobileMenuRef.current)
               setMobileMenuOpen(true)
             }}
             className="ml-auto text-4xl cursor-pointer lg:hidden text-dons-black"

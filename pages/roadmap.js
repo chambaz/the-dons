@@ -24,7 +24,9 @@ const Roadmap = () => {
             </p>
           </div>
 
-          <img src="/img/roadmap.jpg" alt="The Roadmap" className="my-8" />
+          <a href="/img/roadmap.jpg">
+            <img src="/img/roadmap.jpg" alt="The Roadmap" className="my-8" />
+          </a>
         </div>
       </div>
     </>
