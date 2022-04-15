@@ -224,7 +224,7 @@ const Nav = (props) => {
               </a>
             </li>
           </ul>
-          <ul className="flex flex-row items-center justify-center mt-6 font-normal font-lotus-theboldfont text-lotus-red">
+          <ul className="flex flex-row items-center justify-center mt-10 font-normal font-lotus-theboldfont text-lotus-red">
             <li className="mx-2">
               <a
                 href="https://discord.gg/vs8VvHb35k"
