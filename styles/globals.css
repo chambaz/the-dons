@@ -1,16 +1,24 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cursor-emoji {
+  cursor: url(/img/raised-eyebrows-emoji.png) 20 20, pointer;
+  cursor: -webkit-image-set(
+        url(/img/raised-eyebrows-emoji.png) 1x,
+        url(/img/raised-eyebrows-emoji.png) 2x
+      )
+      15 15,
+    pointer;
+  padding-top: 1rem;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.main-bg {
+  background-image: url(/img/bg-full.jpg);
 }
 
-* {
-  box-sizing: border-box;
+@media (min-width: 1024px) {
+  .main-bg {
+    background-image: url(/img/bg.jpg);
+  }
 }
