@@ -227,7 +227,7 @@ const Nav = (props) => {
           <ul className="flex flex-row items-center justify-center mt-10 font-normal font-lotus-theboldfont text-lotus-red">
             <li className="mx-2">
               <a
-                href="https://discord.gg/vs8VvHb35k"
+                href="https://paras.id/collection/nft.thedons.near"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center transition cursor-pointer text-lotus-red hover:text-lotus-red-light">
@@ -259,7 +259,7 @@ const Nav = (props) => {
             </li>
             <li className="mx-2">
               <a
-                href="https://twitter.com/LotusGangNFT"
+                href="https://twitter.com/TheDonsProject"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center transition cursor-pointer text-lotus-red hover:text-lotus-red-light">
@@ -277,7 +277,7 @@ const Nav = (props) => {
             </li>
             <li className="mx-2">
               <a
-                href="https://discord.gg/vs8VvHb35k"
+                href="https://discord.gg/CsPAhxm988"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center transition cursor-pointer text-lotus-red hover:text-lotus-red-light">
