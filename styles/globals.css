@@ -16,8 +16,17 @@
   background-image: url(/img/bg-full.jpg);
 }
 
+.main-heading {
+  font-size: 120px;
+  line-height: 0.7;
+}
+
 @media (min-width: 1024px) {
   .main-bg {
     background-image: url(/img/bg.jpg);
+  }
+
+  .main-heading {
+    font-size: 200px;
   }
 }

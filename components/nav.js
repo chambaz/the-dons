@@ -16,7 +16,7 @@ const Nav = (props) => {
 
   return (
     <>
-      <nav className="container relative z-50 flex items-center px-4 py-4 mx-auto text-2xl md:px-0">
+      <nav className="container relative z-50 flex items-center px-4 py-4 mx-auto text-2xl">
         <Link href="/" passHref>
           <a
             className="transition duration-500"
