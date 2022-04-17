@@ -13,6 +13,9 @@ const Home = () => {
   }, [])
 
   const onMove = (e) => {
+    if (window.innerWidth < 1024) {
+      return
+    }
     setMousePos({
       x: e.pageX - window.innerWidth / 2,
       y: e.pageY - window.innerHeight / 2,
