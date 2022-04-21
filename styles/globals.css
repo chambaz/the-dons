@@ -17,7 +17,7 @@
 }
 
 .main-heading {
-  font-size: 120px;
+  font-size: 100px;
   line-height: 0.7;
 }
 
@@ -27,6 +27,6 @@
   }
 
   .main-heading {
-    font-size: 200px;
+    font-size: 160px;
   }
 }
