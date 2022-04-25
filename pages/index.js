@@ -4,7 +4,6 @@ import Nav from '../components/nav'
 
 const Home = () => {
   const [showDon, setShowDon] = useState(false)
-  const don = useRef()
   const [mousePos, setMousePos] = useState({})
 
   useEffect(() => {
@@ -14,12 +13,13 @@ const Home = () => {
   }, [])
 
   const onMove = (e) => {
+    if (window.innerWidth < 1024) {
+      return
+    }
     setMousePos({
       x: e.pageX - window.innerWidth / 2,
       y: e.pageY - window.innerHeight / 2,
     })
-
-    console.log(mousePos)
   }
 
   const scale = (number, inMin, inMax, outMin, outMax) => {
@@ -84,9 +84,21 @@ const Home = () => {
         onMouseMove={onMove}
         className="w-screen h-screen text-xl bg-center bg-cover bg-dons-white font-dons-altona text-dons-black main-bg">
         <Nav />
+        <div
+          className="fixed w-screen text-center transition-opacity duration-700 -translate-y-1/2 top-1/3 font-dons-jungle"
+          style={{ opacity: showDon ? 1 : 0 }}>
+          <h1
+            className="main-heading"
+            style={{
+              transform: `translate(${mousePos.x / 50}px, ${
+                mousePos.y / 50
+              }px)`,
+            }}>
+            The Dons
+          </h1>
+        </div>
         <img
-          className="fixed hidden object-contain w-screen h-screen opacity-0 lg:block"
-          ref={don}
+          className="fixed hidden object-contain w-screen h-screen transition-opacity duration-700 delay-300 opacity-0 lg:block"
           style={{
             opacity: showDon ? 1 : 0,
             transform: `translate(${(mousePos.x / 50) * -1}px, ${
